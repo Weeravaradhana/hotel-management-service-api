@@ -28,6 +28,8 @@ public class Address {
     private BigDecimal latitude;
 
 
-
+    @OneToOne
+    @JoinColumn(name="branch_id")
+    private Branch branch;
 
 }
