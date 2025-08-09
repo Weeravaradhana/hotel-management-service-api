@@ -14,6 +14,7 @@ import java.util.List;
 @AllArgsConstructor
 @Getter
 @Setter
+@Builder
 public class Hotel {
     @Id
     @Column(name = "hotel_id", length=80)
