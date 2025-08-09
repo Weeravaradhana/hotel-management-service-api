@@ -4,9 +4,11 @@ import com.cpd.hotel_system.hotel_management_service_api.dto.request.RequestHote
 import com.cpd.hotel_system.hotel_management_service_api.dto.response.ResponseHotelDto;
 import com.cpd.hotel_system.hotel_management_service_api.dto.response.paginate.HotelPaginateResponseDto;
 import com.cpd.hotel_system.hotel_management_service_api.service.HotelService;
+import org.springframework.stereotype.Service;
 
 import java.sql.SQLException;
 
+@Service
 public class HotelServiceImpl implements HotelService {
     @Override
     public void create(RequestHotelDto dto) {
